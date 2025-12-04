@@ -2,7 +2,7 @@
 ### *A Q-Learning Approach with Reward Shaping and ε-Greedy Exploration*
 
 This project implements an autonomous Snake-playing agent using **tabular Q-learning**, **reward shaping**, and **ε-greedy exploration**.  
-The agent learns entirely **from scratch (no expert demonstrations)** through trial and error, and reaches strong performance after training.
+The agent learns entirely **from scratch** through trial and error, and reaches strong performance after training.
 
 ---
 
