@@ -14,14 +14,5 @@ The agent learns entirely **from scratch** through trial and error, and reaches 
 - **Training curve visualization** (scores + mean scores)
 - **Evaluation over 50 games**
 - **Boxplot** of evaluation score distribution
-- Optional **live demo** of the trained agent
 - Clean, extensible codebase
 
----
-
-## 📦 Installation
-
-### 1. Clone the repository
-```bash
-git clone <your_repo_url>
-cd <your_project_folder>
