@@ -400,6 +400,19 @@ def watch_trained_agent(agent):
             game.reset()
 
 
+def plot_evaluation_boxplot(eval_scores):
+    """Creates a simple boxplot of evaluation performance."""
+    plt.figure(figsize=(6, 5))
+    plt.boxplot(eval_scores, vert=True, patch_artist=True)
+
+    plt.title("Evaluation Score Distribution After Training")
+    plt.ylabel("Score")
+
+    # Visual improvements
+    plt.grid(axis='y', linestyle='--', alpha=0.6)
+
+    plt.show()
+
 # ------------- MAIN -------------
 
 if __name__ == '__main__':
@@ -410,7 +423,10 @@ if __name__ == '__main__':
     plot_training(scores, mean_scores)
 
     # 3) Evaluate trained agent.
-    evaluate_agent(trained_agent, n_games=50)
+    eval_scores = evaluate_agent(trained_agent, n_games=50)
+
+# 3b) Plot boxplot of evaluation results
+    plot_evaluation_boxplot(eval_scores)
 
     # 4) Watch the agent play.
     watch_trained_agent(trained_agent)
