@@ -425,7 +425,7 @@ if __name__ == '__main__':
     # 3) Evaluate trained agent.
     eval_scores = evaluate_agent(trained_agent, n_games=50)
 
-# 3b) Plot boxplot of evaluation results
+    # 3b) Plot boxplot of evaluation results
     plot_evaluation_boxplot(eval_scores)
 
     # 4) Watch the agent play.
