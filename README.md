@@ -14,5 +14,4 @@ The agent learns entirely **from scratch** through trial and error, and reaches 
 - **Training curve visualization** (scores + mean scores)
 - **Evaluation over 50 games**
 - **Boxplot** of evaluation score distribution
-- Clean, extensible codebase
 
